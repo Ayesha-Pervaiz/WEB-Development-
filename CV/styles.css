@@ -1,0 +1,289 @@
+/* #import url(); */
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family:'Poppins',sans-serif; */
+
+}
+body {
+    background:rgb(209, 229, 225);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position:relative;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:rgb(92, 165, 150) ;
+    margin:40px; 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,1); 
+
+}
+.container .left
+{
+position: relative;
+background: teal;
+padding: 40px;
+}
+.profileT{
+    position : relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(92, 165, 150);
+    
+    
+}
+.profileT .ImgBx{
+    position:relative;
+    border-radius: 50%; /* This value of 50% makes the image a circle */
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    /* float: left; */
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+.profileT .ImgBx img
+{
+position: absolute;
+top: -40px;
+left: 0px;;
+width:100%;
+object-fit: cover;
+
+}
+.profileT h2{
+    color:#e3d8dd;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+/* .profileT h2 span{
+    font-weight: ;
+} */
+.PersonalInfo{
+    padding-top: 20px;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+   color:lightgrey;
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgb(92, 165, 150);
+   
+}
+.PersonalInfo ul{
+    position: relative;
+   text-transform: lowercase;
+
+}
+.PersonalInfo ul li{
+    list-style: none;
+    margin: 7px 20px 7px 0; /* Adjust the right margin to separate icon and text */
+    cursor: pointer;
+    display: flex; /* Use flexbox to align icon and text horizontally */
+    align-items: center; 
+}
+.PersonalInfo ul li .icon{
+    display:inline-block;
+    width:30px;
+    font-size: 18px;
+    color:  rgb(142, 220, 220);
+    vertical-align: middle; /* Vertically align the icon */
+    margin-right: 10px; /* Add some space between the icon and text */
+}
+.PersonalInfo ul li span.text{
+    display:inline-block;
+    color:lightgrey;
+}
+.Education{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(92, 165, 150);
+    
+}
+.Education ul li {
+    list-style-type: none;
+margin-left: 0%;
+}
+
+.Education li{
+    margin:15px;
+
+}
+.Education h3{
+    color: lightgrey;
+}
+.Education h4{
+    color: rgb(142, 220, 220);
+
+}
+.Education h5{
+    color:lightgrey;
+    text-transform: capitalize;
+font-size: 16px;
+}
+.Languages{
+    padding-top: 20px;
+padding-top: 10px ;
+    border-bottom:none;
+}
+.Languages ul li span.text{
+    display:inline-block;
+    color:lightgrey;
+}
+
+
+.Education.Languages .percent{
+    position: relative;
+    width:100%;
+    height:6px;
+    background:rgb(1, 71, 71);
+    display:block;
+    margin:5px;
+    margin-left:0;
+}
+.Education.Languages .percent div{
+   position:absolute; 
+   top: 0;
+   left: 0;
+   height: 100%;
+   background: rgb(142, 220, 220);
+
+}
+.container .right
+{
+    position: relative;
+    background: rgb(92, 165, 150)al;
+    padding: 40px;
+}
+.About{
+    margin-bottom: 50px;
+}
+.About:last-child{
+    margin-bottom:0;
+}
+.title-r{
+    color:black ;
+    text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 10px;
+
+}
+p{
+  color:rgb(1, 43, 43);
+
+}
+.About .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.About .box .Year-Comapany{
+min-width: 150px;
+}
+.About .box .Year-Comapany h5{
+    text-transform: uppercase;
+    color:rgb(65, 66, 66);
+    font-weight:600;
+}
+.About .box .text h4{
+    text-transform: uppercase;
+    color:teal;
+    font-size:16px
+}
+.Skills .box{
+    position:relative;
+    width:100%;
+    display:grid;
+    grid-template-columns:150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.Skills .box h4{
+    text-transform:uppercase ;
+    color:teal;
+    font-weight:500;
+
+}
+.Skills .box .percent{
+    position: relative;
+    width:100%;
+    height:8px;
+    background:rgb(1, 71, 71);
+}
+.Skills .box .percent div{
+   position:absolute; 
+   top: 0;
+   left: 0;
+   height: 100%;
+   background: teal;
+   width: 0; 
+   animation: fillProgressBar 2s ease forwards; /* Animation properties */
+
+}
+@keyframes fillProgressBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%; /* Fill to 80% */
+    }
+}
+.Interests ul{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+.Interests ul li{
+    list-style-type: none;
+    color:teal;
+    font-weight:500;
+    margin:10px 0;
+    font-size: 19px;
+
+}
+.Interests ul li .fa{
+    color:teal;
+    font-size:20px;
+    width:20px;
+}
+  @media (max-width:1000px) {
+    .container{
+      margin  :10px;
+      grid-template-columns: (1,1fr);
+     
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }  
+@media (max-width:600px) {
+.About .box{
+    flex-direction: column;
+}
+.About .box .Year-Comapany{
+    /* min-width: 150px; */
+    margin-bottom:5px;
+}
+.Interests ul{
+    grid-template-columns: repeat(1,1fr);
+}
+.Skills .box{
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
+
+
