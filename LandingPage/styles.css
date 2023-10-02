@@ -32,6 +32,11 @@
 .container p{
     color:rgb(122, 122, 122) !important;
 }
+.btn-primary {
+    color: #fff;
+    background-color: #117a8b;
+    border-color: #17a2b8;
+}
 
 
 
