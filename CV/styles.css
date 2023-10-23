@@ -146,23 +146,64 @@ padding-top: 10px ;
 }
 
 
-.Education.Languages .percent{
+.Education.Languages .percent {
     position: relative;
-    width:100%;
-    height:6px;
-    background:rgb(1, 71, 71);
-    display:block;
-    margin:5px;
-    margin-left:0;
+    width: 100%;
+    height: 6px;
+    background: rgb(1, 71, 71);
+    display: block;
+    margin: 5px;
+    margin-left: 0;
 }
-.Education.Languages .percent div{
-   position:absolute; 
-   top: 0;
-   left: 0;
-   height: 100%;
-   background: rgb(142, 220, 220);
 
+.Education.Languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(142, 220, 220);
 }
+
+.Education.Languages .percent .E {
+    animation: fillProgressBar1 2s ease forwards;
+}
+
+@keyframes fillProgressBar1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.Education.Languages .percent .U {
+    animation: fillProgressBar2 2s ease forwards;
+}
+
+@keyframes fillProgressBar2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 97%;
+    }
+}
+
+.Education.Languages .percent .A {
+    animation: fillProgressBar3 2s ease forwards;
+}
+
+@keyframes fillProgressBar3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+
 .container .right
 {
     position: relative;
@@ -224,24 +265,88 @@ min-width: 150px;
     height:8px;
     background:rgb(1, 71, 71);
 }
-.Skills .box .percent div{
-   position:absolute; 
-   top: 0;
-   left: 0;
-   height: 100%;
-   background: teal;
-   width: 0; 
-   animation: fillProgressBar 2s ease forwards; /* Animation properties */
-
+.Skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: teal;
+    width: 0;
 }
-@keyframes fillProgressBar {
+
+.Skills .box .percent .fill-bar.html {
+    animation: fillProgressBar1 2s ease forwards;
+}
+
+@keyframes fillProgressBar1 {
     0% {
         width: 0;
     }
     100% {
-        width: 80%; /* Fill to 80% */
+        width: 92%;
     }
 }
+.Skills .box .percent .fill-bar.CSS {
+    animation: fillProgressBar2 2s ease forwards;
+}
+
+@keyframes fillProgressBar2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.Skills .box .percent .fill-bar.JS {
+    animation: fillProgressBar3 2s ease forwards;
+}
+
+@keyframes fillProgressBar3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+.Skills .box .percent .fill-bar.JAVA {
+    animation: fillProgressBar4 2s ease forwards;
+}
+
+@keyframes fillProgressBar4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 91%;
+    }
+}
+.Skills .box .percent .fill-bar.C {
+    animation: fillProgressBar5 2s ease forwards;
+}
+
+@keyframes fillProgressBar5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 91%;
+    }
+}
+.Skills .box .percent .fill-bar.PY {
+    animation: fillProgressBar6 2s ease forwards;
+}
+
+@keyframes fillProgressBar6 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
 .Interests ul{
 display:grid;
 grid-template-columns:repeat(4,1fr);

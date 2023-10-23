@@ -27,7 +27,7 @@
     font-size: 1.25rem;
 }
 .container h2{
-   color:rgb(138, 137, 137) !important;
+   color:rgb(169, 168, 168) !important;
 }
 .container p{
     color:rgb(122, 122, 122) !important;
@@ -36,6 +36,7 @@
     color: #fff;
     background-color: #117a8b;
     border-color: #17a2b8;
+    
 }
 
 
