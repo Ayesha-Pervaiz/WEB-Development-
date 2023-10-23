@@ -30,3 +30,11 @@ function updateSlider() {
 }
 
 setInterval(nextSlide, 3000); // Auto slide every 3 seconds
+const logo = document.getElementById('logo');
+const menu = document.querySelector('.menu-list');
+
+logo.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    menu.classList.toggle('hidden');
+}
