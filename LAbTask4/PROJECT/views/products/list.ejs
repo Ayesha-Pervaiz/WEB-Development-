@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Landing.css">
+</head>
+<body class="PB">
+    <h1 class="PH"><%= pageTitle %></h1>
+
+<% if (products.length==0) { %>
+ <p>No products to list</p>
+<% } else { %>
+    <% for( let index = 0; index < products.length; index++ ) { %>
+    <div class="product">
+        <h2><%= products[index].title %></h2>
+        <p>PKR <%= products[index].price %></p>
+    </div>
+    <% } %>
+<% } %>
+</body>
+</html>

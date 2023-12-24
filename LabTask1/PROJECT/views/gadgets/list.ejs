@@ -1,0 +1,28 @@
+<!-- gadgets/list.ejs -->
+ <!-- Custom CSS -->
+ 
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <link rel="stylesheet" href="Landing.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body class="GB">
+     <h3>Gadgets</h3>
+ 
+     <% if (gadgets && gadgets.length > 0) { %>
+         <% gadgets.forEach(gadget => { %>
+             <div>
+                 <h5><%= gadget.name %></h5>
+                 <p><%= gadget.price %></p>
+                 <p><%= gadget.desc %></p>
+             </div>
+         <% }) %>
+     <% } else { %>
+         <p>No gadgets available.</p>
+     <% } %>
+ </body>
+ </html>
+ 
